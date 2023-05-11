@@ -4,8 +4,8 @@ liczba = int(input("Podaj liczbe z zakresu 0d 1 do 100..."))
 
 
 
-if liczba < 1 or liczba > 100:
-    print("podana liczba jest spoza zakresu -zacznij ponownie")
+while liczba < 1 or liczba > 100:
+    print("podana liczba jest spoza zakresu - podaj liczbę ponownie")
     liczba = int(input("Podaj liczbe z zakresu 0d 1 do 100..."))
 
 
