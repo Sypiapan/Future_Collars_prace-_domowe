@@ -115,10 +115,10 @@ while True:
         index+=1
         operacja = {"idx": index, "akcja": akcja, "kwota": liczba * cena, "towar": produkt, "ilość": liczba,  "cena": cena} 
         historia.append(operacja)
-        print(f"Indeks to:{index}")
-        print(f"Akcja to:{akcja}")
-        print(f"Operacja to: {operacja}")
-        print(f"Historia to: {historia}")
+        #print(f"Indeks to:{index}")
+        #print(f"Akcja to:{akcja}")
+        #print(f"Operacja to: {operacja}")
+        #print(f"Historia to: {historia}")
         continue
     
     elif opcja == "4":
