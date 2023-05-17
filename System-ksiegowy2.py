@@ -26,11 +26,20 @@ while True:
         print("Wybrano opcje - Saldo")
     
         kwota = float(input("Podaj kwotę..."))
-
+        
+        while konto + kwota <0 :
+                print(f"Nie moge wypłacić kwoty wyższej niż stan konta. Stan konta to: {konto}")
+                print("Kwota musi być mniejsza lub równa stanowi konta. Spróbuj ponownie")
+                kwota = float(input("Podaj kwotę..."))
         if kwota == 0:
             print("Kwota musi być różna od zera. Spróbuj ponownie")
-            kwota = float(input(print("Podaj kwotę...")))
-            
+            kwota = float(input("Podaj kwotę..."))
+          
+            while konto + kwota <0 :
+                print(f"Nie moge wypłacić kwoty wyższej niż stan konta. Stan konta to: {konto}")
+                print("Kwota musi być mniejsza lub równa stanowi konta. Spróbuj ponownie")
+                kwota = float(input("Podaj kwotę..."))
+                
             konto +=kwota
             print(f"Zmieniono stan konta o kwote: {kwota}")
             
@@ -124,9 +133,11 @@ while True:
 
         print("Wybrano opcje - Magazyn")
         produkt = input(print("Podaj produkt do sprawdzenia..."))
-
+        if produkt not in magazyn:
+            print ("Tego produktu nie ma w magazynie i nie można go sprawdzić. Przechodzę do głownego menu.")
+            continue
         ilosc_magazyn = magazyn[produkt]["ilość"]
-
+        
         print(f"Liczba sztuk w magazynie dla {produkt} to: {ilosc_magazyn} sztuk" )
         continue
 
