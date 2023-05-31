@@ -1,0 +1,10 @@
+
+{'idx': 1, 'akcja': 'wp³ata', 'kwota': 100.0, 'towar': 0, 'iloœæ': 0, 'cena': 0} 
+{'idx': 2, 'akcja': 'wp³ata', 'kwota': 100.0, 'towar': 0, 'iloœæ': 0, 'cena': 0} 
+{'idx': 3, 'akcja': 'wp³ata', 'kwota': 100.0, 'towar': 0, 'iloœæ': 0, 'cena': 0} 
+{'idx': 4, 'akcja': 'kupno', 'kwota': 11.0, 'towar': 'zegar', 'iloœæ': 11, 'cena': 1.0} 
+{'idx': 5, 'akcja': 'kupno', 'kwota': 1.0, 'towar': 'zegar', 'iloœæ': 1, 'cena': 1.0} 
+{'idx': 1, 'akcja': 'kupno', 'kwota': 1.0, 'towar': 'las', 'iloœæ': 1, 'cena': 1.0} 
+{'idx': 2, 'akcja': 'kupno', 'kwota': 1.0, 'towar': 'las', 'iloœæ': 1, 'cena': 1.0} 
+{'idx': 1, 'akcja': 'kupno', 'kwota': 10.0, 'towar': 'rower', 'iloœæ': 10, 'cena': 1.0} 
+{'idx': 2, 'akcja': 'sprzeda¿', 'kwota': 1.0, 'towar': 'rower', 'iloœæ': 1, 'cena': 1.0} 
