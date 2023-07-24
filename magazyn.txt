@@ -1,4 +1,3 @@
-test;0
-zegar;11
-las;1
-rower;9
+rower;8
+pilka;102
+zegar;10
