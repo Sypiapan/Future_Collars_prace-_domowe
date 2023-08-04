@@ -1,0 +1,66 @@
+
+{% extends "base.html" %}
+
+
+
+{% block historia %}
+
+ <div>
+   <a href="./" class="btn btn-primary">Strona główna</a>
+     <div>
+    <label  class="form-label mt-3">Cała historia</label>
+
+         {% if context.historia %}
+<ol>
+
+
+         {% for data in  context.historia %}
+    <li>{{data}}</li>
+
+          {% endfor %}
+</ol>
+          {% endif  %}
+
+
+  </div>
+ </div>
+
+
+ {% endblock %}
+
+{% block historia_seeker %}
+ <form class = "mt-5 " action="/historia" method="POST">
+  <h3>Formularz wyszukiwania historii</h3> <form>
+  <div class="mb-3">
+    <label  for= "okres_od" class="form-label">Historia start</label>
+    <input type="number" class="form-control" id = "okres_od"  name = "okres_od" >
+<div  class="form-text">Podaj nr id akcji od ktorego chcesz przejrzec zapisane akcje. Nr id z zakresu od 0 do -2, gdzie pierwszy element ma indeks 0 a przedostatni to -2.</div>
+
+  </div>
+
+  <div class="mb-3">
+    <label  for= "okres_do "class="form-label">Historia koniec</label>
+    <input type="number" class="form-control" id = "okres_do" name = "okres_do">
+      <div  class="form-text">Podaj nr id akcji do ktorego chcesz przejrzec zapisane akcje. Nr id z zakresu od 1 do n,  gdzie ostatni element  ma indeks -1</div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Wyślij</button>
+        </form>
+</form>
+
+ {% endblock %}
+
+{% block historia_wyszukana %}
+ <div>
+    <label  class="form-label mt-3">Wyszukana historia</label>
+
+         {% if context.przeglad %}
+<ul>
+         {% for data in  context.przeglad %}
+    <li>{{data}}</li>
+          {% endfor %}
+</ul>
+          {% endif  %}
+  </div>
+
+ {% endblock %}

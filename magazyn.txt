@@ -1,3 +1,7 @@
 rower;8
 pilka;102
 zegar;10
+None;0
+mysz;1000
+teczka;1111
+None;0
